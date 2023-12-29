@@ -1,0 +1,96 @@
+body {
+    font-family: 'Raleway Thin';
+    background-color: rgb(23, 23, 23);
+}
+
+.landing_logo {
+    border-radius: 50%;
+    width: auto;
+    height: 26vh;
+}
+
+#firstname, #lastname{
+    font-size: 46px;
+    color: white;
+}
+
+#title {
+    margin: 1vh 0px;
+}
+
+#socialmedia {
+    margin: 1vh 0px;
+}
+
+#about_me{
+    font-size: 16px;
+    color: white;
+}
+
+#lastname, #fullname{
+    font-family: 'Raleway ExtraBold';
+}
+
+body .container{
+    background-color: rgb(38, 38, 38);
+}
+
+a {
+    color: white;
+}
+
+.container {
+    max-width: 76%;
+    margin: 0px auto;
+    box-sizing: border-box;
+    border: 0px solid rgb(0,0,0);
+}
+
+#projectView {
+    max-width: 76%;
+    margin: 0px auto;
+    box-sizing: border-box;
+    border: 0px solid rgb(0,0,0);
+    display: block;
+}
+
+#reel{
+    vertical-align: middle;
+    horiz-align: center;
+    display: block;
+    margin: 0 auto;
+    border-style:none;
+    background-color: black;
+}
+
+.border{
+    border-width: thin;
+    border-color: white;
+    max-width: 90%;
+    margin: 1vh auto;
+}
+
+.btn-5{
+    font-size: 30px;
+}
+.btn-6{
+    font-size: 26px;
+}
+
+.btn{
+    font-family: 'Raleway';
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    vertical-align: middle;
+    horiz-align: center;
+    outline: 1px solid rgba(255,255,255,0.5);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    max-width: 160px;
+    line-height: 45px;
+    width: 100%;
+}
