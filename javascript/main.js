@@ -1,76 +1,40 @@
-var iframe;
-var projects;
-var art;
-var career;
-var skills;
-var container;
-function createIframe() {
-    iframe = document.createElement('iframe');
-    iframe.src = 'https://drive.google.com/file/d/1bzi_YybaD7U4eTfpORpG6rIc_3GAZLpO/preview';
-    iframe.width = '600';
-    iframe.height = '400';
-    iframe.allow = "autoplay";
-    iframe.id = "reel";
+function showResume() {
+    window.open("https://drive.google.com/file/d/1YM6KSJZXgSUvfOPujhrt76MEra4AGOR_/view?usp=drive_link", '_blank');
 }
 
-function createProjects() {
-    projects = document.createElement('div');
-    projects.id = "projects";
-    projects.innerHTML = '';
+function scrollToSection(targetSectionName) {
+    const targetSection = document.getElementById(targetSectionName);
+    if (targetSection) {
+        const yOffset = -90;
+        const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({top: y, behavior: 'smooth'});
+    }
 }
 
-
-function createArt() {
-    art = document.createElement('div');
-    art.id = "art";
-    art.innerHTML = 'art';
+function showHome() {
+    scrollToSection("top");
 }
 
-function createCareer() {
-    career = document.createElement('div');
-    career.id = "career";
-    career.innerHTML = '<section class=\"buttons\"><div class=\"button_container\"><div id=\"education-Button\" class=\"btn btn-6 kd-button\" onclick=\"showReel()\">Education</div>\<div id=\"work-Button\" class=\"btn btn-6 kd-button\" onclick=\"showProjects()\">Work</div></div></section>';
+function showReel() {
+    scrollToSection("reelTitle");
 }
 
-function createSkills() {
-    skills = document.createElement('div');
-    skills.id = "skills";
-    skills.innerHTML = 'skills';
+function showProjects() {
+    scrollToSection("projectTitle");
 }
 
-createIframe();
-createProjects();
-createArt();
-createCareer();
-createSkills();
-
-function clearContainer(){
-    if (container== null)
-        container = document.getElementById('projectView');
-    container.innerHTML = "";
+function showArt() {
+    window.open("https://theprodigaldeveloper.artstation.com/", '_blank');
 }
 
-function showReel(){
-    clearContainer();
-    container.appendChild(iframe);
+function showEducation() {
+    scrollToSection("educationTitle");
 }
 
-function showProjects(){
-    clearContainer();
-    container.appendChild(projects);
+function showWork() {
+    scrollToSection("workTitle");
 }
 
-function showArt(){
-    clearContainer();
-    container.appendChild(art);
-}
-
-function showCareer(){
-    clearContainer();
-    container.appendChild(career);
-}
-
-function showSkills(){
-    clearContainer();
-    container.appendChild(career);
+function showSkills() {
+    scrollToSection("skillTitle");
 }

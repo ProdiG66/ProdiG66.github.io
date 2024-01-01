@@ -1,0 +1,462 @@
+.skill {
+    width: 50%; /* Adjust the width of the skill bar container as needed */
+    margin: 20px auto;
+    text-align: left;
+    list-style-type: none;
+}
+
+.skill h1 {
+    font-family: 'Raleway ExtraBold';
+    font-weight: bolder !important;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 0;
+}
+
+.bar {
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    border-radius: 8px;
+    transition: width 1s ease-in-out;
+}
+
+.skill-item {
+    width: 0;
+    opacity: 0;
+    transition: width 0.6s ease, opacity 0.6s ease;
+}
+
+.skill-item.animate {
+    width: 100%;
+    opacity: 1;
+}
+
+@keyframes cpp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes csharp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes blueprints {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes HLSL {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 79%;
+    }
+}
+
+@keyframes GLSL {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 79%;
+    }
+}
+
+@keyframes ShaderGraph {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 86%;
+    }
+}
+
+@keyframes CS {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 79%;
+    }
+}
+
+@keyframes Java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 76%;
+    }
+}
+
+@keyframes Blender {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 96%;
+    }
+}
+
+@keyframes Maya {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes ZBrush {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 83%;
+    }
+}
+
+@keyframes MD {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 86%;
+    }
+}
+
+@keyframes SubstancePainter {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 86%;
+    }
+}
+
+@keyframes UnrealEngine {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes Unity {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes VS {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 86%;
+    }
+}
+
+@keyframes VSCode {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 86%;
+    }
+}
+
+@keyframes Rider {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes Git {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes Perforce {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes Jira {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes GameplayProgramming {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes GameDesign {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes VersionControl {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes ModelingTopology {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes AnimationRigging {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 73%;
+    }
+}
+
+@keyframes Texturing {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 86%;
+    }
+}
+
+:root {
+    --coding-dark: #004a96;
+    --coding-light: #007dff;
+    --art-dark: #ff265f;
+    --art-light: #ff8abf;
+    --tools-dark: #52d252;
+    --tools-light: #9fff9f;
+    --development-dark: #ff6200;
+    --development-light: #ffac76;
+}
+
+.cpp {
+    width: 90%;
+    background-color: var(--coding-light);
+    animation: cpp 0.6s;
+}
+
+.csharp {
+    width: 90%;
+    background-color: var(--coding-dark);
+    animation: csharp 0.6s;
+}
+
+.blueprints {
+    width: 90%;
+    background-color: var(--coding-light);
+    animation: blueprints 0.6s;
+}
+
+.HLSL {
+    width: 79%;
+    background-color: var(--coding-dark);
+    animation: HLSL 0.6s;
+}
+
+.GLSL {
+    width: 79%;
+    background-color: var(--coding-light);
+    animation: GLSL 0.6s;
+}
+
+.ShaderGraph {
+    width: 86%;
+    background-color: var(--coding-dark);
+    animation: ShaderGraph 0.6s;
+}
+
+.CS {
+    width: 79%;
+    background-color: var(--coding-light);
+    animation: CS 0.6s;
+}
+
+.Java {
+    width: 76%;
+    background-color: var(--coding-dark);
+    animation: Java 0.6s;
+}
+
+.Blender {
+    width: 96%;
+    background-color: var(--art-light);
+    animation: Blender 0.6s;
+}
+
+.Maya {
+    width: 90%;
+    background-color: var(--art-dark);
+    animation: Maya 0.6s;
+}
+
+.ZBrush {
+    width: 83%;
+    background-color: var(--art-light);
+    animation: ZBrush 0.6s;
+}
+
+.MD {
+    width: 86%;
+    background-color: var(--art-dark);
+    animation: MD 0.6s;
+}
+
+.SubstancePainter {
+    width: 86%;
+    background-color: var(--art-light);
+    animation: SubstancePainter 0.6s;
+}
+
+.UnrealEngine {
+    width: 95%;
+    background-color: var(--development-light);
+    animation: UnrealEngine 0.6s;
+}
+
+.Unity {
+    width: 90%;
+    background-color: var(--development-dark);
+    animation: Unity 0.6s;
+}
+
+
+.VS {
+    width: 86%;
+    background-color: var(--tools-dark);
+    animation: VS 0.6s;
+}
+
+.VSCode {
+    width: 86%;
+    background-color: var(--tools-light);
+    animation: VSCode 0.6s;
+}
+
+.Rider {
+    width: 95%;
+    background-color: var(--tools-dark);
+    animation: Rider 0.6s;
+}
+
+
+.Git {
+    width: 90%;
+    background-color: var(--tools-light);
+    animation: Git 0.6s;
+}
+
+.Perforce {
+    width: 95%;
+    background-color: var(--tools-dark);
+    animation: Perforce 0.6s;
+}
+
+.Jira {
+    width: 95%;
+    background-color: var(--tools-light);
+    animation: Jira 0.6s;
+}
+
+.GameplayProgramming {
+    width: 90%;
+    background-color: var(--development-dark);
+    animation: GameplayProgramming 0.6s;
+}
+
+.GameDesign {
+    width: 90%;
+    background-color: var(--development-light);
+    animation: GameDesign 0.6s;
+}
+
+.VersionControl {
+    width: 95%;
+    background-color: var(--development-dark);
+    animation: VersionControl 0.6s;
+}
+
+.ModelingTopology {
+    width: 90%;
+    background-color: var(--art-dark);
+    animation: ModelingTopology 0.6s;
+}
+
+.AnimationRigging {
+    width: 73%;
+    background-color: var(--art-light);
+    animation: AnimationRigging 0.6s;
+}
+
+.Texturing {
+    width: 86%;
+    background-color: var(--art-dark);
+    animation: Texturing 0.6s;
+}
