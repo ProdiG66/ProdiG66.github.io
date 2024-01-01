@@ -6,8 +6,9 @@
 }
 
 .skill h1 {
-    font-family: 'Raleway ExtraBold';
-    font-weight: bolder !important;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900 !important;
     text-transform: uppercase;
 }
 

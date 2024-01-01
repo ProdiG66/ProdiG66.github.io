@@ -1,5 +1,7 @@
 body {
-    font-family: 'Raleway Thin';
+    font-family: 'Raleway';
+    font-weight: 1;
+    font-style: normal;
     background-color: rgb(23, 23, 23);
     color: white;
     margin-bottom: 0px !important;
@@ -16,10 +18,23 @@ body {
     height: auto;
 }
 
+strong {
+    font-weight: 900;
+}
+
+.certificates {
+    font-size: 16px;
+}
+
+.certTitle {
+    font-size: 23px;
+}
+
 #firstname, #lastname {
     font-size: 46px;
     color: white;
     text-transform: uppercase;
+    font-weight: 0;
 }
 
 #title {
@@ -36,7 +51,9 @@ body {
 }
 
 #lastname, #fullname {
-    font-family: 'Raleway ExtraBold';
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-style: normal;
 }
 
 body .container {
@@ -139,6 +156,10 @@ a {
     width: 100%;
 }
 
+.btn:hover {
+    background-color: rgb(19, 19, 19);
+}
+
 .menuBtn {
     font-size: 24px;
     font-family: 'Raleway';
@@ -148,7 +169,9 @@ a {
 }
 
 .sectionTitle {
-    font-family: 'Raleway ExtraBold';
+    font-family: 'Raleway';
+    font-weight: bolder;
+    font-style: normal;
     font-size: 4vh;
     text-transform: uppercase;
 }
