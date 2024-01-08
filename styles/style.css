@@ -87,11 +87,30 @@ a {
     display: block;
 }
 
+.project {
+    margin-bottom: 3rem;
+}
+
+.projectCover {
+    max-width: 66%;
+    max-height: 66%;
+    border-radius: 30px;
+}
+
+.projectThumbnail {
+    display: inline-block;
+    max-width: 66%;
+    max-height: 16%;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
 #reelVideo {
     vertical-align: middle;
     horiz-align: center;
     display: block;
-    margin: 0 auto;
+    margin: 0 3rem;
     border-style: none;
     background-color: black;
 }
