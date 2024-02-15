@@ -1,5 +1,5 @@
 function showResume() {
-    window.open("https://drive.google.com/file/d/1YM6KSJZXgSUvfOPujhrt76MEra4AGOR_/view?usp=drive_link", '_blank');
+    window.open("https://drive.google.com/file/d/1GIYGahTAlY9_DjG1lq9fiSAuCukIg1v8/view", '_blank');
 }
 
 function scrollToSection(targetSectionName) {
